@@ -5,5 +5,5 @@ export function useKeycloakAuthProvider() {
   const { keycloak, initialized } = useKeycloak();
   const { authProvider } = getAuthProvider(keycloak);
 
-  return { keycloak, initialized, authProvider };
+  return { initialized, authProvider };
 }

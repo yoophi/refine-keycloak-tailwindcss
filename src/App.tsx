@@ -21,7 +21,7 @@ const SampleHeader = () => (
 );
 
 const App: React.FC = () => {
-  const { keycloak, initialized, authProvider } = useKeycloakAuthProvider();
+  const { initialized, authProvider } = useKeycloakAuthProvider();
 
   if (!initialized) {
     return <div>Loading...</div>;
