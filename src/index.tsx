@@ -4,6 +4,7 @@ import Keycloak from "keycloak-js";
 import { ReactKeycloakProvider } from "@react-keycloak/web";
 
 import App from "./App";
+import "index.css";
 
 const keycloak = new Keycloak({
   clientId: "refine-demo",

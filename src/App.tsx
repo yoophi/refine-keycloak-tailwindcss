@@ -16,6 +16,10 @@ import { Login } from "pages/login";
 import { API_URL } from "./const";
 import { useKeycloakAuthProvider } from "./hooks/useKeycloakAuth";
 
+const SampleHeader = () => (
+  <h1 className="text-3xl font-bold underline bg-red-200">Hello world!</h1>
+);
+
 const App: React.FC = () => {
   const { keycloak, initialized, authProvider } = useKeycloakAuthProvider();
 
@@ -25,6 +29,7 @@ const App: React.FC = () => {
 
   return (
     <Refine
+      Header={SampleHeader}
       LoginPage={Login}
       authProvider={authProvider}
       dataProvider={dataProvider(API_URL, axios)}
