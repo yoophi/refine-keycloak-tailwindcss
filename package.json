@@ -15,8 +15,10 @@
         "@uiw/react-md-editor": "^3.19.5",
         "axios": "^0.26.1",
         "cross-env": "^7.0.3",
+        "daisyui": "^2.50.0",
         "keycloak-js": "^20.0.3",
         "react": "^18.0.0",
+        "react-daisyui": "^3.0.2",
         "react-dom": "^18.0.0",
         "react-scripts": "^5.0.0",
         "typescript": "^4.7.4"

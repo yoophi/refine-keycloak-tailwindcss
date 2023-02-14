@@ -15,9 +15,19 @@ import { PostCreate, PostEdit, PostList, PostShow } from "pages/posts";
 import { Login } from "pages/login";
 import { API_URL } from "./const";
 import { useKeycloakAuthProvider } from "./hooks/useKeycloakAuth";
+import { Button } from "react-daisyui";
 
 const SampleHeader = () => (
-  <h1 className="text-3xl font-bold underline bg-red-200">Hello world!</h1>
+  <>
+    <div className="flex w-[100%] justify-between bg-gray-200 px-6 py-2">
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <div className="w-[200px]">
+        <Button color="primary" className="w-[100%]">
+          DaisyUI Button
+        </Button>
+      </div>
+    </div>
+  </>
 );
 
 const App: React.FC = () => {
